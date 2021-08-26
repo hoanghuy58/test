@@ -1,0 +1,37 @@
+
+
+<CanvasExample5>:
+    canvas.before:
+        Rectangle:
+            size: self.size
+            source: "images\hx.png"
+    Label:
+        text: str(root.diem)
+        size: 40,40
+        font_name: "fonts\Lcd.ttf"
+        font_size: 35
+        color: "violet"
+        pos: root.diem_x-130, root.diem_y-70
+    Image:
+        source: "images\c1.gif"
+        pos: root.diem_x-80, root.diem_y-80
+
+
+    #Button:
+        #background_normal:"images\c.jpg"
+        #size: 300,300
+       # font_name: "fonts\Lcd.ttf"
+        #font_size: 50
+        #color: "violet"
+        #pos: root.diem_x/2-150, root.diem_y/2-150
+
+
+    Button:
+        text: "CHƠI LẠI"
+        size: 135,40
+        font_name: "fonts\Lcd.ttf"
+        font_size: 35
+        color: "violet"
+        pos: 40, root.diem_y-70
+        on_press: root.choilai()
+
